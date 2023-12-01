@@ -1,0 +1,63 @@
+:root {
+    --border: #999;
+    --inputHeight: 40px
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #f5f5f5;
+    font-family: sans-serif;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.form-container {
+    padding: 90px;
+}
+input[type="number"] {
+    height: var(--inputHeight);
+    border: 2px solid var(--border);
+    font-size: 19px;
+    max-width: 90px;
+}
+.ITN-container {
+    display: flex;
+	margin-right: 8px;
+}
+.ITN-container input[type="number"]::-webkit-outer-spin-button,
+.ITN-container input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+.ITN-container input[type="number"] {
+    border-right: none;
+    border-left: none;
+    text-align: center;
+}
+.ITN-container .downITNbtn,
+.ITN-container .upITNbtn {
+    display: inline-block;
+    width: 30px;
+    height: var(--inputHeight);
+    border: 2px solid var(--border);
+    text-align: center;
+    padding-top: 3px;
+    font-size: 24px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.ITN-container .downITNbtn {
+    border-radius: var(--inputHeight) 0 0 var(--inputHeight);
+    border-right: none;
+}
+.ITN-container .upITNbtn {
+    border-radius: 0 var(--inputHeight) var(--inputHeight) 0;
+    border-left: none;
+}
+    
