@@ -1,2 +1,2 @@
 "# input-type-number-with-buttons" 
-<input type="number" />
+<input type="number" value="1" />
